@@ -1,8 +1,9 @@
+import './globals.css'
 //fuentes
 import { Alex_Brush, Montserrat } from 'next/font/google'
-import './globals.css'
 
-const alexBrush = AlexBrush({
+
+const alexBrush = Alex_Brush({
   weight: ['400'],
   subsets: ['latin'],
   variable: '--font-alexBrush',
