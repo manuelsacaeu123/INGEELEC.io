@@ -1,8 +1,10 @@
-import Image from 'next/image'
+import Events from '@/components/events/Events';
 
 export default function Home() {
   return (
-    //quitando el contedino 
-    <main>INICIO</main>
+    //
+    <main>
+      <Events />
+    </main>
   );
 }
