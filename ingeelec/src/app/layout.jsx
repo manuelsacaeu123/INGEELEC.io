@@ -1,4 +1,4 @@
-import Footer from '@/components/Footer';
+
 import './globals.css'
 //fuentes
 import { Alex_Brush, Montserrat } from 'next/font/google'
