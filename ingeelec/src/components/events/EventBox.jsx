@@ -1,11 +1,20 @@
 import Image from 'next/image';
 
 //iconos
-import { RiMapPin2Fill } from 'react-icons/ri'
+import { RiMapPin2Fill } from 'react-icons/ri';
+
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../../variants';
 
 const EventBox = ({ events }) => {
     return (
-        <div className='bg-secondary/60 rounded-[10px] p-4 xl:p-12 relative'>
+        <motion.div
+            variants={fadeIn('up', 0.4)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className='bg-secondary/60 rounded-[10px] p-4 xl:p-12 relative'
+        >
             <div className='flex flex-col xl:flex-row justify-between h-[620px] xl:h-full gap-x-4'>
                 {/* image */}
                 <div className='hidden xl:flex w-[400px]'>
@@ -19,7 +28,7 @@ const EventBox = ({ events }) => {
                     />
                 </div>
                 {/* event list */}
-                <div className='flex-1 bg-purple-400/10 h-[500px] flex flex-col justify-between overflow-y-scroll scrollbar-thin
+                <div className='flex-1 h-[500px] flex flex-col justify-between overflow-y-scroll scrollbar-thin
                  scrollbar-thumb-accentscrollbar-track-white/10 xl:pr-6'>
                     {/* event item */}
                     {events.map((event) => {
@@ -55,7 +64,7 @@ const EventBox = ({ events }) => {
                                 </div>
 
                                 {/*rango de precios*/}
-                
+
                                 <div className='w-[100px] text-[17px] text-center Otext-accent font-bold'>
                                     {event.priceRange}
                                 </div>
@@ -66,7 +75,7 @@ const EventBox = ({ events }) => {
                     })}
                 </div >
             </div >
-        </div >
+        </motion.div>
     );
 };
 
