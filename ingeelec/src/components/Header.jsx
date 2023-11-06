@@ -12,6 +12,7 @@ import NavMobile from "./NavMobile";
 import Nav from "./Nav";
 
 
+
 const Header = () => {
   const [active, setActive] = useState(false);
 
@@ -42,25 +43,27 @@ const Header = () => {
         {/*logo */}
         <Link
           href={'#'}
-          className='relative flex w-[226px] h-[37.64px] transition-all mb-4 xl:mb-0'
+          className='relative flex w-[226px] h-[37.64px] 
+          transition-all mb-4 xl:mb-0'
         >
-          <Image src={'/assets/header/logo.svg'}
+          <Image src={'/assets/header/logo.png'}
             fill
             className="object-contain"
           />
         </Link>
 
         {/*nav */}
-        <Nav containerStyles='hidden xl:flex items-center gap-x-8' />
+        <Nav containerStyles='hidden xl:flex items-center 
+        gap-x-8' />
 
         {/*nav mobile */}
         <NavMobile />
 
         {/*menu btn */}
-        <nav>Menu btn</nav>
+        <nav>Espacio vacio </nav>
 
         {/*redes sociales */}
-        <nav>Redes Sociales</nav>
+        <nav>Espacio para las Redes Sociales</nav>
 
       </div>
     </header>
