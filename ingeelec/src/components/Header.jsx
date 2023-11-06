@@ -60,7 +60,7 @@ const Header = () => {
         <NavMobile />
 
         {/*menu btn */}
-        <nav>Espacio vacio </nav>
+        <nav>ㅤ </nav>
 
         {/*redes sociales */}
         <nav>Espacio para las Redes Sociales</nav>

@@ -39,18 +39,41 @@ const Hero = () => {
                         className='relative'
 
                     >
+                        
                         <motion.div
                             variants={fadeIn('up', 0.4)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{ once: false, amount: 0.3 }}
-                            className='w-[300px] h-[101.37px] xl-w-[500px] xl:h-[244.97px]'>
-                            <Image src={'assets/hero/inge.svg'}
+                            className='w-[60px] h-[88.37px] xl-w-[100px] xl:h-[182.97px]'>
+                            <Image src={'assets/hero/whatsapp.svg'}
                                 fill
                                 alt=''
                                 className='object-contain'
                             />
+                            
                         </motion.div>
+                    </MouseParallaxChild>
+                    <MouseParallaxChild
+                        factorX={0.2}
+                        factorY={0.4}
+                        className='relative'
+
+                    >
+                        <motion.div
+                            variants={fadeIn('up', 0.4)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className='w-[60px] h-[50.37px] xl-w-[200px] xl:h-[150.97px]'>
+                            <Image src={'assets/hero/messenger.svg'}
+                                fill
+                                alt=''
+                                className='object-contain'
+                            />
+                            
+                        </motion.div>
+                        
                     </MouseParallaxChild>
                     
                     <MouseParallaxChild
