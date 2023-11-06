@@ -38,3 +38,11 @@ body{
 .section {
   @apply py-12 xl:py-24;
 }
+
+/*aumentar los demas estilos*/
+
+
+/*estilos para la barra de navegacion*/
+.active {
+  @apply border-b-2 border-accent;
+}
