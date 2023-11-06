@@ -7,6 +7,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
+//COMPONENTE
+import NavMobile from "./NavMobile";
+import Nav from "./Nav";
+
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -46,10 +50,10 @@ const Header = () => {
         </Link>
 
         {/*nav */}
-        <nav>Nav</nav>
+        <Nav/>
         
         {/*nav mobile */}
-        <nav>Nav mobile</nav>
+        <NavMobile />
         
         {/*menu btn */}
         <nav>Menu btn</nav>
