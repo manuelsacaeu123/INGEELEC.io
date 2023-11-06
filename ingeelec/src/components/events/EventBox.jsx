@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import React from 'react';
 
 //iconos
 import { RiMapPin2Fill } from 'react-icons/ri';

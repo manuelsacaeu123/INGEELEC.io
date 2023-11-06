@@ -5,6 +5,7 @@ export default function Home() {
     //
     <main>
       <Events />
+      <div className='h-[4000px]'></div>
     </main>
   );
 }
