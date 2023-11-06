@@ -3,19 +3,19 @@ import { Link } from "react-scroll"
 const links = [
     {
         path: 'home',
-        name: 'Home'
+        name: '-- Inicio -- '
     },
     {
         path: 'tours',
-        name: 'Productos'
+        name: '-- Productos -- '
     },
     {
-        path: 'discography',
-        name: 'informacion'
+        path: '',
+        name: '-- Información -- '
     },
     {
-        path: 'contact',
-        name: 'Contactos'
+        path: '',
+        name: '-- Contactos --'
     },
 
 ]
