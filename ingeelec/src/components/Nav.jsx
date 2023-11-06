@@ -6,16 +6,16 @@ const links = [
         name: 'Home'
     },
     {
-        path: 'home',
-        name: 'Home'
+        path: 'tours',
+        name: 'Productos'
     },
     {
-        path: 'home',
-        name: 'Home'
+        path: 'discography',
+        name: 'informacion'
     },
     {
-        path: 'home',
-        name: 'Home'
+        path: 'contact',
+        name: 'Contactos'
     },
 
 ]
