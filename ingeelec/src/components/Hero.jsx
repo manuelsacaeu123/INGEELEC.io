@@ -97,12 +97,12 @@ const Hero = () => {
 
                 </MouseParallaxContainer>
 
-                <motion.div 
-                variants={fadeIn('up', 1)}
-                initial='hidden'
-                whileInView={'show'}
-                viewport={{ once: false, amount: 0.7 }}
-                className='min-h-[60px] flex items-center mb-6 text-[26px]'>
+                <motion.div
+                    variants={fadeIn('up', 1)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className='min-h-[60px] flex items-center mb-6 text-[26px]'>
                     <div className='hidden xl:flex items-center xl:gap-x-0'>
                         <div>Soporte Técnico</div>
                         <div className='relative w-2 h-2 mx-2 flex items-center justify-center'>
@@ -129,6 +129,17 @@ const Hero = () => {
                         repeat={Infinity}
                         cursor={false}
                     />
+                </motion.div>
+
+                <motion.div
+                    variants={fadeIn('up', 1.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once: false, amount: 0.7 }}
+                >
+                    <button className='btn btn-lg btn-accent'>
+                        Ir a comprar
+                    </button>
                 </motion.div>
             </div>
             {/*imagen*/}
