@@ -11,15 +11,13 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 const locationSequence = [
-    'Los Angeles, USA',
+    'ELECTRONICA',
     3000,
-    'Rio de Janeiro, Brazil',
+    'REDES',
     3000,
-    'Paris, France',
+    'SISTEMAS',
     3000,
-    'Berlin, Germany',
-    3000,
-    'Berlin, Germany',
+    'ELECTRICIDAD',
     -3000,
 ]
 const Hero = () => {
@@ -87,7 +85,7 @@ const Hero = () => {
                             mix-blend-luminosity'
                         >
                             <Image
-                                src={'/assets/hero/bird.png'}
+                                src={'/assets/hero/sopTecnico.png'}
                                 fill
                                 alt=''
                                 className='object-contain'
@@ -104,15 +102,15 @@ const Hero = () => {
                     viewport={{ once: false, amount: 0.7 }}
                     className='min-h-[60px] flex items-center mb-6 text-[26px]'>
                     <div className='hidden xl:flex items-center xl:gap-x-0'>
-                        <div>Soporte Técnico</div>
-                        <div className='relative w-2 h-2 mx-2 flex items-center justify-center'>
+                        <div>SOPORTE TÉCNICO EN</div>
+                        {/*icono<div className='relative w-2 h-2 mx-2 flex items-center justify-center'>
                             <Image fill src={'/assets/hero/dot.svg'} />
                         </div>
-                        <div>ciudad</div>
+                        <div>EN</div>
                         <div className='relative w-2 h-2 mx-2 flex items-center justify-center'>
                             <Image fill src={'/assets/hero/dot.svg'} />
-                        </div>
-                        <div>2023</div>
+                        </div>*/}
+                        
                     </div>
                     {/*icono*/}
                     <div className='hidden xl:flex items-center justify-center relative w-7
@@ -135,10 +133,10 @@ const Hero = () => {
                     variants={fadeIn('up', 1.3)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{ once: false, amount: 0.7 }}
+                    viewport={{ once: false, amount: 0.3 }}
                 >
                     <button className='btn btn-lg btn-accent'>
-                        Ir a comprar
+                        Comenzar
                     </button>
                 </motion.div>
             </div>
