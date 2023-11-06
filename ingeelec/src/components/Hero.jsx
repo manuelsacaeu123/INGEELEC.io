@@ -104,11 +104,16 @@ const Hero = () => {
                         <Image fill src={'/assets/hero/mic.svg'} alt='' />
                     </div>
                     <TypeAnimation
-                    
+                        sequence={locationSequence}
+                        wrapper='div'
+                        speed={10}
+                        deletionSpeed={10}
+                        repeat={Infinity}
+                        cursor={false}
+                    />
                 </div>
-                {/*location ubicacion*/}
             </div>
-            {/*imagne*/}
+            {/*imagen*/}
             <motion.div
             variants={fadeIn('left', 0.2)}
             initial='hidden'
