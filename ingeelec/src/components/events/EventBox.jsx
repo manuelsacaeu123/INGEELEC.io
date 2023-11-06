@@ -44,7 +44,7 @@ const EventBox = ({ events }) => {
                                 border-white/10 pb-10 xl:py-3 last-of-type:border-none
                                 first-of-type:pt-0'>
 
-                                <div className='flex flex-col justify-center items-center gap-x-4'>
+                                <div className='flex flex-col xl:flex-row justify-center items-center gap-x-4'>
                                     { /* day & month */}
                                     <div className='flex flex-col justify-center items-center leading-tight w-[80px] mb-4 xl:mb-0'>
                                         <div className='text-[44px] font-black text-accent'>
