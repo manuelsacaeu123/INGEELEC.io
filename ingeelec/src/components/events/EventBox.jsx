@@ -13,7 +13,7 @@ import { fadeIn } from '../../../variants';
 const EventBox = ({ events }) => {
     return (
         <motion.div
-            variants={fadeIn('up', 0.4)}
+            variants={fadeIn('up', 0.6)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
@@ -33,7 +33,7 @@ const EventBox = ({ events }) => {
                 </div>
                 {/* event list */}
                 <div className='flex-1 h-[500px] flex flex-col justify-between overflow-y-scroll scrollbar-thin
-                 scrollbar-thumb-accentscrollbar-track-white/10 xl:pr-6'>
+                 scrollbar-thumb-accent scrollbar-track-white/10 xl:pr-6'>
                     {/* event item */}
                     {events.map((event) => {
                         return (
