@@ -44,33 +44,15 @@ const Hero = () => {
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{ once: false, amount: 0.3 }}
-                            className='w-[300px] h-[101.37px] xl-w-[725px] xl:h-[244.97px]'>
-                            <Image src={'assets/hero/typo-1.svg'}
+                            className='w-[300px] h-[101.37px] xl-w-[500px] xl:h-[244.97px]'>
+                            <Image src={'assets/hero/inge.svg'}
                                 fill
                                 alt=''
                                 className='object-contain'
                             />
                         </motion.div>
                     </MouseParallaxChild>
-                    <MouseParallaxChild
-                        factorX={0.9}
-                        factorY={0.9}
-                        className='absolute xl:left-6 z-30'
-
-                    >
-                        <motion.div
-                            variants={fadeIn('up', 0.7)}
-                            initial='hidden'
-                            whileInView={'show'}
-                            viewport={{ once: false, amount: 0.3 }}
-                            className='w-[300px] h-[101.37px] xl-w-[625px] xl:h-[244.97px]'>
-                            <Image src={'assets/hero/typo-2.svg'}
-                                fill
-                                alt=''
-                                className='object-contain'
-                            />
-                        </motion.div>
-                    </MouseParallaxChild>
+                    
                     <MouseParallaxChild
                         factorX={0.3}
                         factorY={0.6}
@@ -149,7 +131,7 @@ const Hero = () => {
                 className='hidden xl:flex absolute right-0 top-0 before:w-[748px]
             before:h-[893px] before:absolute before:right-0 before:top-0 
             before:bg-singerOverlay before:z-10'>
-                <Image src={'/assets/hero/soporte.jpg'}
+                <Image src={'/assets/hero/poste.png'}
                     width={617}
                     height={893}
                     alt=''
