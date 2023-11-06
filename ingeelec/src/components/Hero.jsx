@@ -149,7 +149,7 @@ const Hero = () => {
                 className='hidden xl:flex absolute right-0 top-0 before:w-[748px]
             before:h-[893px] before:absolute before:right-0 before:top-0 
             before:bg-singerOverlay before:z-10'>
-                <Image src={'/assets/hero/singer.png'}
+                <Image src={'/assets/hero/soporte.jpg'}
                     width={617}
                     height={893}
                     alt=''

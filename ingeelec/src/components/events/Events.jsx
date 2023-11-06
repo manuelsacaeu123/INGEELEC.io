@@ -13,7 +13,7 @@ const Events = async () => {
     return (
         <section className="section" id="tours">
             <div className="container mx-auto">
-                <SectionHeader pretitle='PRETITULOOOO' title='TITULOOOOOOO'/>
+                <SectionHeader pretitle='INGEELEC' title='EN OFERTA %'/>
                 {/*even box*/}
                 <EventBox events={events} />
             </div>
