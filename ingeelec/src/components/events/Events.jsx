@@ -2,7 +2,7 @@ import EventBox from './EventBox';
 import SectionHeader from '../SectionHeader';
 
 const getEvents = async () => {
-    const res = await fetch('http://localhost:4000/events');
+    const res = await fetch('http://localhost:4002/events');
     return res.json();
 };
 
@@ -13,7 +13,7 @@ const Events = async () => {
     return (
         <section className="section" id="tours">
             <div className="container mx-auto">
-                <SectionHeader pretitle='INGEELEC' title='EN OFERTA %'/>
+                <SectionHeader pretitle='Cámaras' title='EN OFERTA %'/>
                 {/*even box*/}
                 <EventBox events={events} />
             </div>
