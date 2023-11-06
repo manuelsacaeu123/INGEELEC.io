@@ -97,12 +97,30 @@ const Hero = () => {
 
                 </MouseParallaxContainer>
 
-                <div>
+                <motion.div 
+                variants={fadeIn('up', 1)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{ once: false, amount: 0.7 }}
+                className='min-h-[60px] flex items-center mb-6 text-[26px]'>
+                    <div className='hidden xl:flex items-center xl:gap-x-0'>
+                        <div>Soporte Técnico</div>
+                        <div className='relative w-2 h-2 mx-2 flex items-center justify-center'>
+                            <Image fill src={'/assets/hero/dot.svg'} />
+                        </div>
+                        <div>ciudad</div>
+                        <div className='relative w-2 h-2 mx-2 flex items-center justify-center'>
+                            <Image fill src={'/assets/hero/dot.svg'} />
+                        </div>
+                        <div>2023</div>
+                    </div>
                     {/*icono*/}
                     <div className='hidden xl:flex items-center justify-center relative w-7
                     h-7 mx-4'>
                         <Image fill src={'/assets/hero/mic.svg'} alt='' />
                     </div>
+
+                    {/*animacion */}
                     <TypeAnimation
                         sequence={locationSequence}
                         wrapper='div'
@@ -111,15 +129,15 @@ const Hero = () => {
                         repeat={Infinity}
                         cursor={false}
                     />
-                </div>
+                </motion.div>
             </div>
             {/*imagen*/}
             <motion.div
-            variants={fadeIn('left', 0.2)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
-            className='hidden xl:flex absolute right-0 top-0 before:w-[748px]
+                variants={fadeIn('left', 0.2)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{ once: false, amount: 0.7 }}
+                className='hidden xl:flex absolute right-0 top-0 before:w-[748px]
             before:h-[893px] before:absolute before:right-0 before:top-0 
             before:bg-singerOverlay before:z-10'>
                 <Image src={'/assets/hero/singer.png'}
