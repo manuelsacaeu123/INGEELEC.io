@@ -9,9 +9,7 @@ import { fadeIn } from "../../variants";
 
 
 const Header = () => {
-  return (
-    <div>Header</div>
-  )
-}
+  return <header className="fixed z-50 w-full">Header</header>;
+};
 
 export default Header
