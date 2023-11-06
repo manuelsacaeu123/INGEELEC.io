@@ -34,8 +34,9 @@ const Header = () => {
 
 
   return (
-    <header className={`fixed z-50 w-full 
-    ${active ? 'bg-[#030315] py-6' : 'bg-transparent py-8'}`}>
+    <header className={`fixed z-50 w-full transition-all
+    ${active ? 'bg-[#030315] py-6 transition-all' : 'bg-transparent py-8 transition-all'}`}>
+
       <div className="container mx-auto flex flex-col xl:flex-row items-center 
       justify-between" >
         {/*logo */}
@@ -43,21 +44,21 @@ const Header = () => {
           href={'#'}
           className='relative flex w-[226px] h-[37.64px] transition-all mb-4 xl:mb-0'
         >
-          <Image src={'/assets/header/logo.svg'} 
-          fill
-          className="object-contain"
+          <Image src={'/assets/header/logo.svg'}
+            fill
+            className="object-contain"
           />
         </Link>
 
         {/*nav */}
-        <Nav/>
-        
+        <Nav containerStyles='hidden xl:flex items-center gap-x-8' />
+
         {/*nav mobile */}
         <NavMobile />
-        
+
         {/*menu btn */}
         <nav>Menu btn</nav>
-        
+
         {/*redes sociales */}
         <nav>Redes Sociales</nav>
 
