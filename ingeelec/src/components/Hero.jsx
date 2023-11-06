@@ -31,7 +31,7 @@ const Hero = () => {
             {/*imagne*/}
             <div className='hidden xl:flex absolute right-0 top-0 before:w-[748px]
             before:h-[893px] before:absolute before:right-0 before:top-0 
-            before:bg-singerOverlay'>
+            before:bg-singerOverlay before:z-10'>
                 <Image src={'/assets/hero/singer.png'} 
                 width={617}
                 height={893} 
