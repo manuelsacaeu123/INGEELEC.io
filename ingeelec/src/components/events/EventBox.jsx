@@ -1,4 +1,7 @@
+//error solucionado de framer motion linea 2
+'use client';
 import Image from 'next/image';
+
 import React from 'react';
 
 //iconos
