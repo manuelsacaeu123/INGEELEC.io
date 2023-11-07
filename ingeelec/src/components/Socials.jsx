@@ -1,19 +1,16 @@
 import Link from "next/link"
 
 import {
-  RiYoutubeFill,
+  RiFacebookFill,
   RiInstagramFill,
-  RiSpotifyFill,
-  RiSoundcloudFill,
-}
-
-  from 'react-icons/ri';
+  RiWhatsappFill,
+}from 'react-icons/ri';
 
 
 const socials = [
   {
     path: '#',
-    icon: <RiYoutubeFill />
+    icon: <RiFacebookFill />
   },
   {
     path: '#',
@@ -21,13 +18,10 @@ const socials = [
   },
   {
     path: '#',
-    icon: <RiSpotifyFill />
-  },
-  {
-    path: '#',
-    icon: <RiSoundcloudFill />
+    icon: <RiWhatsappFill />
   },
 ];
+
 
 const Socials = ({ containerStyles, iconStyles }) => {
   return (

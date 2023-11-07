@@ -68,7 +68,7 @@ const Header = () => {
 
         {/*redes sociales */}
         <Socials 
-        containerStyles='flex Text-[24px] gap-x-4'
+        containerStyles='flex text-[24px] gap-x-4'
         iconStyles='hover:text-accent transition-all'
         />
 

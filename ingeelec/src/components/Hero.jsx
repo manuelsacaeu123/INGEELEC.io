@@ -47,7 +47,7 @@ const Hero = () => {
                             whileInView={'show'}
                             viewport={{ once: false, amount: 0.3 }}
                             className='w-[300px] h-[101.37px] xl-w-[725px] xl:h-[244.97px]'>
-                            <Image src={'assets/hero/typo-1.svg'}
+                            <Image src={'assets/hero/svg.svg'}
                                 fill
                                 alt=''
                                 className='object-contain'
@@ -142,7 +142,7 @@ const Hero = () => {
                 className='hidden xl:flex absolute right-0  before:w-[748px]
             before:h-[893px] before:absolute before:right-0 before:top-0 
             before:bg-singerOverlay before:z-10'>
-                <Image src={'/assets/hero/singer.png'}
+                <Image src={'/assets/hero/poste.png'}
                     width={617}
                     height={893}
                     alt=''
