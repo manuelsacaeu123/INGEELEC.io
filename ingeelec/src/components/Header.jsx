@@ -61,7 +61,11 @@ const Header = () => {
         <NavMobile />
 
         {/*menu btn */}
-        <MenuBtn />
+        <div className="absolute right-7 top-9 z-10 xl:hidden">
+          <MenuBtn />
+        </div>
+
+
         {/*redes sociales */}
         <nav>Espacio para las Redes Sociales</nav>
 
