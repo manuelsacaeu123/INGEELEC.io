@@ -17,6 +17,7 @@
     "react-icons": "^4.11.0",
     "react-parallax-mouse": "^2.0.1",
     "react-responsive": "^9.0.2",
+    "react-responsive-carousel": "^3.2.23",
     "react-scroll": "^1.9.0",
     "react-type-animation": "^3.2.0",
     "swiper": "^11.0.3",

@@ -18,12 +18,13 @@ const locationSequence = [
     'SISTEMAS',
     3000,
     'ELECTRICIDAD',
-    -3000,
+    3000,
 ]
 const Hero = () => {
     return <section className='h-[80vh]  xl:h-[850px]' id='home'>
         <div className='container mx-auto h-full flex justify-center items-center
-        xl:justify-start'>
+        xl:justify-center relative'>
+            
             {/*text */}
             <div className='h-full flex flex-col justify-center items-center 
             xl:items-start z-20 pt-12'>
@@ -45,8 +46,8 @@ const Hero = () => {
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{ once: false, amount: 0.3 }}
-                            className='w-[60px] h-[88.37px] xl-w-[100px] xl:h-[182.97px]'>
-                            <Image src={'assets/hero/whatsapp.svg'}
+                            className='w-[300px] h-[101.37px] xl-w-[725px] xl:h-[244.97px]'>
+                            <Image src={'assets/hero/typo-1.svg'}
                                 fill
                                 alt=''
                                 className='object-contain'
@@ -54,39 +55,21 @@ const Hero = () => {
                             
                         </motion.div>
                     </MouseParallaxChild>
-                    <MouseParallaxChild
-                        factorX={0.2}
-                        factorY={0.4}
-                        className='relative'
 
-                    >
-                        <motion.div
-                            variants={fadeIn('up', 0.4)}
-                            initial='hidden'
-                            whileInView={'show'}
-                            viewport={{ once: false, amount: 0.3 }}
-                            className='w-[60px] h-[50.37px] xl-w-[200px] xl:h-[150.97px]'>
-                            <Image src={'assets/hero/messenger.svg'}
-                                fill
-                                alt=''
-                                className='object-contain'
-                            />
-                            
-                        </motion.div>
-                        
-                    </MouseParallaxChild>
+
+                    {/*logo de soporte tecnico
                     
                     <MouseParallaxChild
                         factorX={0.3}
                         factorY={0.6}
-                        className='hidden xl:flex absolute right-0 z-20 opacity-80'
+                        className='hidden xl:flex absolute right-60 z-20 opacity-80'
                     >
                         <motion.div
                             variants={fadeIn('left', 1.4)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{ once: false, amount: 0.3 }}
-                            className='w-[150px] h-[100px] xl-w-[248px] xl:h-[200px]
+                            className='w-[60px] h-[100px] xl-w-[248px] xl:h-[200px]
                             mix-blend-luminosity'
                         >
                             <Image
@@ -97,6 +80,9 @@ const Hero = () => {
                             />
                         </motion.div>
                     </MouseParallaxChild>
+
+*/}
+                    
 
                 </MouseParallaxContainer>
 
@@ -144,6 +130,8 @@ const Hero = () => {
                         Comenzar
                     </button>
                 </motion.div>
+
+                
             </div>
             {/*imagen*/}
             <motion.div
@@ -151,10 +139,10 @@ const Hero = () => {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.7 }}
-                className='hidden xl:flex absolute right-0 top-0 before:w-[748px]
+                className='hidden xl:flex absolute right-0  before:w-[748px]
             before:h-[893px] before:absolute before:right-0 before:top-0 
             before:bg-singerOverlay before:z-10'>
-                <Image src={'/assets/hero/poste.png'}
+                <Image src={'/assets/hero/singer.png'}
                     width={617}
                     height={893}
                     alt=''

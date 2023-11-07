@@ -10,6 +10,7 @@ import { fadeIn } from "../../variants";
 //COMPONENTE
 import NavMobile from "./NavMobile";
 import Nav from "./Nav";
+import MenuBtn from "./MenuBtn";
 
 
 
@@ -60,8 +61,7 @@ const Header = () => {
         <NavMobile />
 
         {/*menu btn */}
-        <nav>ㅤ </nav>
-
+        <MenuBtn />
         {/*redes sociales */}
         <nav>Espacio para las Redes Sociales</nav>
 
